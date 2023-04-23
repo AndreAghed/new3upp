@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulär</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h2 class="image"> </h2>
+
+
+
+    <header>
+        <a href="start.html"> <img src="images/logga.png"></img> </a>
+    </header>
+
+
+    <nav>
+
+        <ul>
+            <li><a href="start.html">Startsida</a></li>
+
+        </ul>
+    </nav>
+
+    <div id="main">
+        <form action="submit-feedback.php" method="post" data-netlify="true">
+            <div class="nöjdhet">
+
+                <fieldset>
+                    <h3>Vad vill du se för produkter i vår butik?</h3>
+
+                    <textarea id="feedback" name="feedback" rows="5" cols="40"></textarea>
+                </fieldset>
+
+
+
+                <fieldset>
+                    <h3>Hur nöjd är du med vår webbplats?</h3>
+                    <ul>
+                        <li>
+                            <input type="radio" id="pleased-very" name="pleased" value="very"><label
+                                for="pleased-very">Väldigt nöjd:</label>
+                        </li>
+                        <li>
+
+                            <input type="radio" id="pleased-somewhat" name="pleased" value="somewhat"><label
+                                for="pleased-somewhat">Någorlunda nöjd:</label>
+
+                        </li>
+                        <li>
+                            <input type="radio" id="pleased-not" name="pleased" value="not"><label
+                                for="pleased-not">Inte nöjd:</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <h3>Vad hade kunnat göra dig mer nöjd?</h3>
+
+                    <textarea id="feedback" name="feedback" rows="5" cols="40"></textarea>
+                </fieldset>
+                <fieldset>
+                    <h3>Hur hittade du vår webbplats?</h3>
+
+                    <textarea id="feedback" name="feedback" rows="5" cols="40"></textarea>
+                </fieldset>
+            </div>
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </div>
+
+    <div class="footer">
+        <p><a href="about.html">Om oss</a></p>
+
+
+    </div>
+</body>
+
+</html>
